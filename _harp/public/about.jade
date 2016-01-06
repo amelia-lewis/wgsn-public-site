@@ -1,0 +1,194 @@
+extends layout
+
+block append vars
+  - bodyclass = 'view-about'
+
+block content
+  section.masthead.masthead-product(style="background-image: url('/img/about/masthead.jpg')")
+    .masthead-content
+      .block-bot-md: h1 With you, we create tomorrow
+      p
+        | WGSN is the world’s leading trend authority. Our products and services cover 
+        | forecasting for the fashion and lifestyle sectors, real-time data analytics, crowd-
+        | sourced design validation and expert consulting. We help you create, buy and sell 
+        | better products by reducing risk and enhancing creativity.
+      .block-top-lg: a.btn.btn-yellow.btn-video(href="") Watch video
+
+  #second-level-nav.hidden-md
+    #progress-bar
+    .nav.text-center
+      ul.tight#second-level-nav-menu
+        li: a(href="#our-services") Our Services
+        li /
+        li: a(href="#people") People
+        li /
+        li: a(href="#careers") Careers
+
+  .block-top-lg.hidden-md
+
+  section.bg-xxlt-grey#our-services
+    .content-wrap.block-ver-md
+      .row
+        .col-xs-12.col-sm-6
+          h1 Subscription Service
+          p.text-larger
+            | WGSN’s subscription offer includes market-leading trend forecasting
+            | for the fashion and creative industries and consumer lifestyle sectors,
+            | as well as design-validation crowd-sourcing service and our big data
+            | retail analytics site. Whatever your role, be it designer, buyer,
+            | merchandiser, marketer or strategist, we have a solution for you.
+
+          .block-top-md.block-bot-sm
+            h4 WGSN Fashion
+            p
+              | WGSN Fashion is our flagship trend forecasting service for the
+              | fashion and creative industries. Our global experts predict and track
+              | the near- and long-term trends in consumer attitudes and across 14
+              | separate fashion categories.
+            a.read-more(href="/wgsn-fashion") Find out more 
+              span &#8594;
+
+          hr
+
+          .block-top-md.block-bot-sm
+            h4 WGSN Lifestyle &amp; Interiors
+            p
+              | WGSN Lifestyle &amp; Interiors is the only trend service designed exclusively
+              | for the consumer lifestyle industries with expert insight on areas
+              | including automotive, children’s lifestyle, home, hospitality &amp; travel,
+              | food &amp; drink and wellness.
+            a.read-more(href="/wgsn-lifestyle") Find out more 
+              span &#8594;
+
+          hr
+
+          .block-top-md.block-bot-sm
+            h4 WGSN Styletrial
+            p
+              | WGSN Styletrial enables you to test products and ranges on your key
+              | target consumer groups via crowd-sourcing before you launch them, reducing
+              | risk and identifying potential best sellers in advance.
+            a.read-more(href="/wgsn-styletrial") Find out more 
+              span &#8594;
+
+          hr
+
+          .block-top-md.block-bot-sm
+            h4 WGSN INstock
+            p
+              | WSGN INstock is our big data retail analytics service aimed at buyers
+              | and merchandisers enabling them to track best sellers, new drops, re-stocks
+              | and mark-downs across some of the world’s leading brands and retailers.
+            a.read-more(href="/wgsn-instock") Find out more 
+              span &#8594;
+
+        .col-xs-12.col-sm-6
+          h1 Consultancy
+          p.text-larger
+            | To complement our subscription services, WGSN also offers bespoke consultancy
+            | via WGSN Mindset. If you have a particular project that requires specialist
+            | input &mdash; be it launching a new range, entering a new market, deep diving into
+            | a consumer sector &mdash; our consultants can prepare an expert solution.
+
+          .block-top-md.block-bot-sm
+            h4 WGSN Mindset
+            p
+              | WGSN Mindset offers bespoke services via a team of world-class
+              | consultancy solutions for the fashion and lifestyle sectors, including
+              | white papers, tailored research, bespoke data sets, workshops, range
+              | reviews, presentations and much more.
+            a.read-more(href="/wgsn-mindset") Find out more 
+              span &#8594;
+
+          hr
+
+          .block-top-md.block-bot-sm
+            p.text-larger
+              | All of our products and services can be seamlessly integrated into one
+              | flexible package. We have solutions that touch each part of the supply
+              | chain from sourcing to manufacturing, design to marketing and retail so
+              | each department of your business can take the product or service most
+              | relevant to them.
+          
+          .block-top-sm.block-bot-md
+            a.btn.btn-grey(href="") Get in touch
+
+          hr
+
+          .block-ver-sm
+            p.text-smaller.text-italic
+              | WGSN services must only be used in the course of a business and/or
+              | professional environment and for business and/or professional reasons.
+              | WGSN services are not suitable for consumers and should not be used in
+              | such capacity.
+
+  section.bg-img.full-width-section(style="background-image: url('/img/about/audience.jpg')")
+    .content-wrap.content-narrow.text-center
+      .block-ver-lg
+        h1 A world of trend expertise
+        p
+          | Our trends team has a combined industry experience of more than 700 years.
+          | They are drawn from all walks of the industry and all four corners of
+          | the globe. They are all driven by the same goal, to help our members make
+          | better decisions, make better products and achieve greater success.
+        .block-top-md: a.btn.btn-yellow(href="/contact") Get in touch
+
+  section.bg-xxlt-grey#people
+   .content-wrap.content-wrap-tight
+      h1.text-center.tight.block-bot-md Trends experts
+      .arrow-carousel-prev.hidden-sm
+      .arrow-carousel-next.hidden-sm
+      .carousel-wrap
+        .carousel-inner
+          +card-person-carousel("/img", "Name Surname", "Head of Department XYZ", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo dapibus lorem, vel vestibulum velit. Nulla urna tellus, finibus et purus sit amet, porttitor tempus nibh. Duis faucibus neque nec enim vulputate fermentum.")
+          +card-person-carousel("/img", "Name Surname", "Head of Department XYZ", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo dapibus lorem, vel vestibulum velit. Nulla urna tellus, finibus et purus sit amet, porttitor tempus nibh. Duis faucibus neque nec enim vulputate fermentum.")
+          +card-person-carousel("/img", "Name Surname", "Head of Department XYZ", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo dapibus lorem, vel vestibulum velit. Nulla urna tellus, finibus et purus sit amet, porttitor tempus nibh. Duis faucibus neque nec enim vulputate fermentum.")
+          +card-person-carousel("/img", "Name Surname", "Head of Department XYZ", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo dapibus lorem, vel vestibulum velit. Nulla urna tellus, finibus et purus sit amet, porttitor tempus nibh. Duis faucibus neque nec enim vulputate fermentum.")
+          +card-person-carousel("/img", "Name Surname", "Head of Department XYZ", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo dapibus lorem, vel vestibulum velit. Nulla urna tellus, finibus et purus sit amet, porttitor tempus nibh. Duis faucibus neque nec enim vulputate fermentum.")
+          +card-person-carousel("/img", "Name Surname", "Head of Department XYZ", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo dapibus lorem, vel vestibulum velit. Nulla urna tellus, finibus et purus sit amet, porttitor tempus nibh. Duis faucibus neque nec enim vulputate fermentum.")
+          +card-person-carousel("/img", "Name Surname", "Head of Department XYZ", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo dapibus lorem, vel vestibulum velit. Nulla urna tellus, finibus et purus sit amet, porttitor tempus nibh. Duis faucibus neque nec enim vulputate fermentum.")
+          +card-person-carousel("/img", "Name Surname", "Head of Department XYZ", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo dapibus lorem, vel vestibulum velit. Nulla urna tellus, finibus et purus sit amet, porttitor tempus nibh. Duis faucibus neque nec enim vulputate fermentum.")
+
+    .content-wrap.hidden-sm
+      .row
+        .pagination
+          .dot.active
+          .dot
+          .dot
+          .dot
+
+  section.bg-xxlt-grey
+    .content-wrap.content-wrap-tight
+      h1.text-center.tight.block-bot-md Executive Management
+      .arrow-carousel-prev.hidden-sm
+      .arrow-carousel-next.hidden-sm
+      .carousel-wrap
+        .carousel-inner
+          +card-person-carousel("/img", "Name Surname", "Head of Department XYZ", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo dapibus lorem, vel vestibulum velit. Nulla urna tellus, finibus et purus sit amet, porttitor tempus nibh. Duis faucibus neque nec enim vulputate fermentum.")
+          +card-person-carousel("/img", "Name Surname", "Head of Department XYZ", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo dapibus lorem, vel vestibulum velit. Nulla urna tellus, finibus et purus sit amet, porttitor tempus nibh. Duis faucibus neque nec enim vulputate fermentum.")
+          +card-person-carousel("/img", "Name Surname", "Head of Department XYZ", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo dapibus lorem, vel vestibulum velit. Nulla urna tellus, finibus et purus sit amet, porttitor tempus nibh. Duis faucibus neque nec enim vulputate fermentum.")
+          +card-person-carousel("/img", "Name Surname", "Head of Department XYZ", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo dapibus lorem, vel vestibulum velit. Nulla urna tellus, finibus et purus sit amet, porttitor tempus nibh. Duis faucibus neque nec enim vulputate fermentum.")
+          +card-person-carousel("/img", "Name Surname", "Head of Department XYZ", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo dapibus lorem, vel vestibulum velit. Nulla urna tellus, finibus et purus sit amet, porttitor tempus nibh. Duis faucibus neque nec enim vulputate fermentum.")
+          +card-person-carousel("/img", "Name Surname", "Head of Department XYZ", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo dapibus lorem, vel vestibulum velit. Nulla urna tellus, finibus et purus sit amet, porttitor tempus nibh. Duis faucibus neque nec enim vulputate fermentum.")
+          +card-person-carousel("/img", "Name Surname", "Head of Department XYZ", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo dapibus lorem, vel vestibulum velit. Nulla urna tellus, finibus et purus sit amet, porttitor tempus nibh. Duis faucibus neque nec enim vulputate fermentum.")
+          +card-person-carousel("/img", "Name Surname", "Head of Department XYZ", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo dapibus lorem, vel vestibulum velit. Nulla urna tellus, finibus et purus sit amet, porttitor tempus nibh. Duis faucibus neque nec enim vulputate fermentum.")
+
+    .content-wrap.hidden-sm
+      .row
+        .pagination
+          .dot.active
+          .dot
+          .dot
+          .dot
+
+  section.bg-img.full-width-section#careers(style="background-image: url('/img/about/bubbles.jpg')")
+    .content-wrap.content-narrow.text-center
+      .block-ver-lg
+        h1 Innovators, entrepreneurs and explorers wanted
+        p
+          | WGSN is one of the most creative and companies on the planet. Our team is
+          | made up of passionate and committed trend experts, designers, editors,
+          | account managers, marketers, product developers, customer service experts
+          | and much more besides. If you are an innovator, entrepreneur and explorer
+          | in your field, we want to hear from you.
+        .block-top-md: a.btn.btn-yellow(href="http://careers.wgsn.com/") Get in touch

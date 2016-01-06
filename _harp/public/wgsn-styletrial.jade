@@ -1,0 +1,185 @@
+extends layout
+
+block append vars
+  - bodyclass = 'view-product'
+
+block content
+  section.masthead.masthead-product(style="background-image: url('/img/wgsn-styletrial/masthead.jpg')")
+    .masthead-content
+      .block-bot-md: .masthead-product-logo(style="background-image: url('/img/logos/wgsn-styletrial.png')")
+      p
+        | Trusted daily by designers, buyers and merchandisers from many
+        | of the world's top brands to give them market leading insight and
+        | creative direction to stay ahead.
+      .block-top-lg: a.btn.btn-yellow.btn-video(href="") Watch video
+
+    .masthead-base
+      ul.inline-list
+        li: a(href="/wgsn-fashion") Fashion
+        li /
+        li: a(href="/wgsn-lifestyle") Lifestyle &amp; Interiors
+        li /
+        li: a(href="/wgsn-instock") INstock
+        li /
+        li: a.active(href="/wgsn-styletrial") StyleTrial
+        li /
+        li: a(href="/wgsn-mindset") Mindset
+
+  #second-level-nav.hidden-md
+    #progress-bar
+    .nav.text-center
+      ul.tight#second-level-nav-menu
+        li: a(href="#subscriber-features") Subscriber Features
+        li /
+        li: a(href="#our-experts") Our Experts
+
+  .block-top-lg.hidden-md
+
+  section.bg-lt-grey.full-width-section
+    .content-wrap.content-narrow.text-center
+      .block-ver-lg
+        h1 Trusted by the world’s leading brands
+        p
+          | WGSN Fashion is our flagship service which is trusted by the world’s
+          | leading brands, designers and retailers to help them plan and trade
+          | their ranges, by enhancing their creativity and reducing their risk.
+          | Our team of global experts report and predict the long- and near-term
+          | trends in consumer behaviour, retail, marketing and business strategy,
+          | and across 14 fashion product categories.
+
+  section.product-page-content.section-tight#subscriber-features
+    //- Design & Inspiration
+    .product-row
+      .left.equal-height-shorter
+        .img(style="background-image: url('/img/wgsn-fashion/img-1.jpg')")
+        .heading.bg-black.display-box
+          .block-lg
+            h2 Design &amp; Inspiration
+            .divider
+            p The latest in thinking from our global team of trend experts
+
+      .right.bg-white.equal-height-taller.display-box
+        .block-lg
+          p
+            | Plan your range with confidence. Here you will find long-term
+            | consumer trends and attitudes in our Think Tank section, new and
+            | breaking trends showcased in our Trend Link hub, every major catwalk
+            | show with full trend analyses, and thousands of street style reports...
+          ul
+            li - Trend and colour forecasts 2+ years ahead
+            li - 1,300 catwalk shows and 150+ catwalk analysis reports per season
+            li - More than 17 million searchable images PLUS thousands of royalty-free prints, graphics and CADs
+
+    //- 14 Product Categories
+    .product-row.alternate
+      .left.equal-height-shorter
+        .img(style="background-image: url('/img/wgsn-fashion/img-2.jpg')")
+        .heading.bg-white.display-box
+          .block-lg
+            h2 14 Product Categories
+            .divider
+            p The latest in thinking from our global team of trend experts
+
+      .right.bg-black.equal-height-taller.display-box
+        .block-lg
+          p
+            | WGSN employs specialists in every product category to ensure the insight
+            | and trends presented are as accurate and as actionable as possible. Whether
+            | you are a specialist or a generalist, or just need an overview of the
+            | whole market, we’ve got it covered.
+          ul.two-col-list
+            li - Accessories
+            li - Active
+            li - Beauty
+            li - Colour 
+            li - Denim
+            li - Footwear
+            li - Intimates &amp; Swim
+            li - Kidswear
+            li - Knitwear
+            li - Materials &amp; Textiles
+            li - Menswear
+            li - Prints &amp; Graphics
+            li - Womenswear
+            li - Youth
+
+    //- Market Intelligence
+    .product-row.video
+      .right.equal-height-shorter
+        .img(style="background-image: url('/img/wgsn-fashion/img-3.jpg')")
+
+      .left.bg-black.equal-height-taller.display-box
+        .heading.bg-black
+          .block-lg
+            h2 Market Intelligence
+            .divider
+            p
+              | Up-to-the-minute news appears here alongside deep dives into strategies
+              | for retail, merchandising, marketing and sourcing. Plus the most creative
+              | and influential retail openings, visual merchandising and marketing
+              | campaigns are all covered in-depth.
+            ul
+              li - EVERY major trade show and thought-leader event covered
+              li - Seasonal ad campaign analysis with 340 pages of searchable ads
+              li - Executive strategy briefings and best practice reports on digital innovation and social media
+
+    //- Image lLibrary
+    .product-row
+      .left.equal-height-shorter
+        .img(style="background-image: url('/img/wgsn-fashion/img-4.jpg')")
+        .heading.bg-white.display-box
+          .block-lg
+            h2 Image Library
+            .divider
+            p The latest in thinking from our global team of trend experts
+
+      .right.bg-black.equal-height-taller.display-box
+        .block-lg
+          p
+            | One of the most extensive image libraries in fashion containing more
+            | than 17m fully tagged and searchable hi res images. A raft of filters
+            | enables you to pinpoint your search to the exact results you want and
+            | intuitive tools allow you to sort and share your images with ease.  
+          ul
+            li - 17m hi-res, zoomable and searchable images - 10,000 added EVERY day
+            li - 2,500-plus industry-specific keywords for filtering your results 
+            li - Catwalks, retail windows, in-store displays, tradeshow booths, street style and vintage
+
+    //- Design Tools & Resources
+    .product-row.alternate
+      .left.equal-height-shorter
+        .img(style="background-image: url('/img/wgsn-fashion/img-5.jpg')")
+        .heading.bg-black.display-box
+          .block-lg
+            h2 Design Tools &amp; Resources
+            .divider
+            p The latest in thinking from our global team of trend experts
+
+      .right.bg-white.equal-height-taller.display-box
+        .block-lg
+          p
+            | WGSN offers easy and intuitive tools to help you organise and share the
+            | inspiration and images you find on our site. City by City guides allow
+            | you to plan your next inspiration trip, while our Color Play palette
+            | builer, CADs, prints and graphics help you design and plan your range. 
+          ul
+            li - Organise and share your images and inspiration with your teams
+            li - CLIP images from anywhere on the web and save to your workspace
+            li - Build your own colour palettes, choose from Pantone, CSI, NCS and CNCS swatch libraries
+
+  section.bg-xxlt-grey#our-experts
+    .content-wrap.content-wrap-tight
+      h1.text-center.block-bot-md Meet the experts
+      .row
+        +card-person("/img", "Name Surname", "Head of Department XYZ", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo dapibus lorem, vel vestibulum velit. Nulla urna tellus, finibus et purus sit amet, porttitor tempus nibh. Duis faucibus neque nec enim vulputate fermentum.")
+        +card-person("/img", "Name Surname", "Head of Department XYZ", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo dapibus lorem, vel vestibulum velit. Nulla urna tellus, finibus et purus sit amet, porttitor tempus nibh. Duis faucibus neque nec enim vulputate fermentum.")
+        +card-person("/img", "Name Surname", "Head of Department XYZ", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo dapibus lorem, vel vestibulum velit. Nulla urna tellus, finibus et purus sit amet, porttitor tempus nibh. Duis faucibus neque nec enim vulputate fermentum.")
+        +card-person("/img", "Name Surname", "Head of Department XYZ", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo dapibus lorem, vel vestibulum velit. Nulla urna tellus, finibus et purus sit amet, porttitor tempus nibh. Duis faucibus neque nec enim vulputate fermentum.")
+        +card-person("/img", "Name Surname", "Head of Department XYZ", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo dapibus lorem, vel vestibulum velit. Nulla urna tellus, finibus et purus sit amet, porttitor tempus nibh. Duis faucibus neque nec enim vulputate fermentum.")
+        +card-person("/img", "Name Surname", "Head of Department XYZ", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo dapibus lorem, vel vestibulum velit. Nulla urna tellus, finibus et purus sit amet, porttitor tempus nibh. Duis faucibus neque nec enim vulputate fermentum.")
+        +card-person("/img", "Name Surname", "Head of Department XYZ", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo dapibus lorem, vel vestibulum velit. Nulla urna tellus, finibus et purus sit amet, porttitor tempus nibh. Duis faucibus neque nec enim vulputate fermentum.")
+        +card-person("/img", "Name Surname", "Head of Department XYZ", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo dapibus lorem, vel vestibulum velit. Nulla urna tellus, finibus et purus sit amet, porttitor tempus nibh. Duis faucibus neque nec enim vulputate fermentum.")
+
+      .row
+        a.expand-section(href="") Meet more of the team
+          img(src="img/arrow-grey-down.png", width="40")

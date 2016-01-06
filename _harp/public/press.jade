@@ -1,0 +1,264 @@
+extends layout
+
+block append vars
+  - bodyclass = 'view-press'
+
+block content
+  section.masthead.masthead-product(style="background-image: url('/img/press/masthead.jpg'); background-position: center bottom;")
+    .masthead-content
+      .block-bot-md: h1 The voice of the industry
+      p
+        | WGSN’s experts are the go-to voice for comment and insight on the
+        | current events and future trends in the industry. We make regular
+        | appearances across all media channels from broadcast to digital
+        | and print and right across the globe. 
+      .block-top-lg: a.btn.btn-yellow(href="") Press enquiries
+
+    //- .masthead-base
+    //-   p Media &amp; Press Releases
+    //-   .block-top-sm: img(src="img/arrow-down-white-wide.png", width="43")
+
+  #second-level-nav.hidden-md
+    #progress-bar
+    .nav.text-center
+      ul.tight#second-level-nav-menu
+        li: a(href="#media") In the media
+        li /
+        li: a(href="#press-releases") Press releases
+        li /
+        li: a(href="#press-enquiries") Press enquiries
+
+  .block-top-lg.hidden-md
+
+  section.bg-xxlt-grey#media
+    .content-wrap.content-wrap-tight
+      h1.text-center.tight.block-bot-md In the media
+      .arrow-carousel-prev.hidden-sm
+      .arrow-carousel-next.hidden-sm
+      .carousel-wrap
+        .carousel-inner
+          +card-media(
+            "/img",
+            "21st September, 2015",
+            "Global retail trends & the vision, S/S 2017",
+            "The Industry",
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo dapibus lorem, vel vestibulum velit.",
+            "/")
+          +card-media(
+            "/img",
+            "21st September, 2015",
+            "Global retail trends & the vision, S/S 2017",
+            "The Industry",
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo dapibus lorem, vel vestibulum velit. Nulla urna tellus, finibus et purus sit amet, porttitor tempus nibh. Duis faucibus neque nec enim vulputate fermentum.",
+            "/")
+          +card-media(
+            "/img",
+            "21st September, 2015",
+            "Global retail trends & the vision, S/S 2017",
+            "The Industry",
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            "/")
+          +card-media(
+            "/img",
+            "21st September, 2015",
+            "Global retail trends & the vision, S/S 2017",
+            "The Industry",
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo dapibus lorem, vel vestibulum velit. Nulla urna tellus, finibus et purus sit amet, porttitor tempus nibh. Duis faucibus neque nec enim vulputate fermentum.",
+            "/")
+          +card-media(
+            "/img",
+            "21st September, 2015",
+            "Global retail trends & the vision, S/S 2017",
+            "The Industry",
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo dapibus lorem, vel vestibulum velit. Nulla urna tellus, finibus et purus sit amet, porttitor tempus nibh. Duis faucibus neque nec enim vulputate fermentum.",
+            "/")
+          +card-media(
+            "/img",
+            "21st September, 2015",
+            "Global retail trends & the vision, S/S 2017",
+            "The Industry",
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo dapibus lorem, vel vestibulum velit. Nulla urna tellus, finibus et purus sit amet, porttitor tempus nibh. Duis faucibus neque nec enim vulputate fermentum.",
+            "/")
+          +card-media(
+            "/img",
+            "21st September, 2015",
+            "Global retail trends & the vision, S/S 2017",
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo dapibus lorem, vel vestibulum velit. Nulla urna tellus, finibus et purus sit amet, porttitor tempus nibh. Duis faucibus neque nec enim vulputate fermentum.",
+            "/")
+          +card-media(
+            "/img",
+            "21st September, 2015",
+            "Global retail trends & the vision, S/S 2017",
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo dapibus lorem, vel vestibulum velit. Nulla urna tellus, finibus et purus sit amet, porttitor tempus nibh. Duis faucibus neque nec enim vulputate fermentum.",
+            "/")
+
+    .content-wrap.hidden-sm
+      .row
+        .pagination
+          .dot.active
+          .dot
+          .dot
+          .dot
+          .dot
+          .dot
+          .dot
+          .dot
+
+  section.bg-xlt-grey#press-releases
+    .content-wrap.content-wrap-tight
+      h1.text-center.tight.block-bot-md Press releases
+      .arrow-carousel-prev.hidden-sm
+      .arrow-carousel-next.hidden-sm
+      .carousel-wrap
+        .carousel-inner
+          +card-media(
+            "/img",
+            "21st September, 2015",
+            "Global retail trends & the vision, S/S 2017",
+            "",
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            "/press-release")
+          +card-media(
+            "/img",
+            "21st September, 2015",
+            "Global retail trends & the vision, S/S 2017",
+            "",
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo dapibus lorem, vel vestibulum velit. Nulla urna tellus, finibus et purus sit amet, porttitor tempus nibh. Duis faucibus neque nec enim vulputate fermentum.",
+            "/press-release")
+          +card-media(
+            "/img",
+            "21st September, 2015",
+            "Global retail trends & the vision, S/S 2017",
+            "",
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo dapibus lorem, vel vestibulum velit.",
+            "/press-release")
+          +card-media(
+            "/img",
+            "21st September, 2015",
+            "Global retail trends & the vision, S/S 2017",
+            "",
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo dapibus lorem, vel vestibulum velit. Nulla urna tellus, finibus et purus sit amet, porttitor tempus nibh. Duis faucibus neque nec enim vulputate fermentum.",
+            "/press-release")
+          +card-media(
+            "/img",
+            "21st September, 2015",
+            "Global retail trends & the vision, S/S 2017",
+            "",
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo dapibus lorem, vel vestibulum velit. Nulla urna tellus, finibus et purus sit amet, porttitor tempus nibh. Duis faucibus neque nec enim vulputate fermentum.",
+            "/press-release")
+          +card-media(
+            "/img",
+            "21st September, 2015",
+            "Global retail trends & the vision, S/S 2017",
+            "",
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo dapibus lorem, vel vestibulum velit. Nulla urna tellus, finibus et purus sit amet, porttitor tempus nibh. Duis faucibus neque nec enim vulputate fermentum.",
+            "/press-release")
+          +card-media(
+            "/img",
+            "21st September, 2015",
+            "Global retail trends & the vision, S/S 2017",
+            "",
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo dapibus lorem, vel vestibulum velit. Nulla urna tellus, finibus et purus sit amet, porttitor tempus nibh. Duis faucibus neque nec enim vulputate fermentum.",
+            "/press-release")
+          +card-media(
+            "/img",
+            "21st September, 2015",
+            "Global retail trends & the vision, S/S 2017",
+            "",
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo dapibus lorem, vel vestibulum velit. Nulla urna tellus, finibus et purus sit amet, porttitor tempus nibh. Duis faucibus neque nec enim vulputate fermentum.",
+            "/press-release")
+
+    .content-wrap.hidden-sm
+      .row
+        .pagination
+          .dot.active
+          .dot
+          .dot
+          .dot
+          .dot
+          .dot
+          .dot
+          .dot
+
+  section.bg-xxlt-grey#press-enquiries
+    .content-wrap
+      h1.text-center.block-bot-md Press Enquiries
+      .row
+        .col-xs-12.col-sm-6
+          h4 Regional Contact
+
+          .block-bot-md
+            .block-ver-sm
+              p 
+                strong GLOBAL: 
+                | Kevin Smith, Senior Specialist Brand &amp; PR
+              p Email: 
+                a.underlined(href="mailto:kevin.smith@wgsn.com") kevin.smith@wgsn.com
+              p Tel: 
+                a.underlined(href="callto:4402077156562") +44 (0)207 715 6562
+
+            hr
+
+            .block-ver-sm
+              p 
+                strong NORTH AMERICA: 
+                | Gary Schwartz, VP Marketing North America
+              p Email: 
+                a.underlined(href="mailto:gary.schwartz@wgsn.com") gary.schwartz@wgsn.com
+              p Tel: 
+                a.underlined(href="callto:401234567890") +44 (0)123 456 7890
+
+            hr
+
+            .block-ver-sm
+              p 
+                strong EMEA: 
+                | Rachel Murphy, Marketing Director EMEA
+              p Email: 
+                a.underlined(href="mailto:rachel.murphy@wgsn.com") rachel.murphy@wgsn.com
+              p Tel: 
+                a.underlined(href="callto:401234567890") +44 (0)123 456 7890
+
+            hr
+
+            .block-ver-sm
+              p 
+                strong LATAM: 
+                | Clarissa Araujo, Marketing &amp; PR Manager
+              p Email: 
+                a.underlined(href="mailto:clarissa.araujo@wgsn.com") clarissa.araujo@wgsn.com
+              p Tel: 
+                a.underlined(href="callto:401234567890") +44 (0)123 456 7890
+
+            hr
+
+            .block-ver-sm
+              p 
+                strong APAC: 
+                | Alice Chim, Head of Marketing APAC
+              p Email: 
+                a.underlined(href="mailto:alice.chim@wgsn.com") alice.chim@wgsn.com
+              p Tel: 
+                a.underlined(href="callto:401234567890") +44 (0)123 456 7890
+
+        .col-xs-12.col-sm-6
+          .block-bot-md
+            h4 Give us the Scoop
+            .block-ver-sm
+              p
+                | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo
+                | dapibus lorem, vel vestibulum velit. Nulla urna tellus, finibus et purus sit
+                | amet, porttitor tempus nibh. Duis faucibus neque nec enim vulputate fermentum.
+
+          .block-bot-md
+            h4 Send us a Blog Pitch
+            .block-ver-sm
+              p
+                | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo
+                | dapibus lorem, vel vestibulum velit. Nulla urna tellus, finibus et purus sit
+                | amet, porttitor tempus nibh. Duis faucibus neque nec enim vulputate fermentum.
+
+          .block-bot-sm: a.btn.btn-yellow(href="mailto:press@wgsn.com") press@wgsn.com
+          a.btn.btn-grey(href="") Download press pack
+
+

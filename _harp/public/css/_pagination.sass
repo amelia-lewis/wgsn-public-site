@@ -1,0 +1,14 @@
+.pagination
+  position: relative
+  @extend .text-center
+
+  .dot
+    display: inline-block
+    margin: 10px 10px 0
+    width: 10px
+    height: 10px
+    +border-radius(50%)
+    border: 1px solid $md-grey
+
+    &.active
+      background: $md-grey

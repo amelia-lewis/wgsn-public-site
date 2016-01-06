@@ -1,0 +1,70 @@
+#second-level-nav
+  position: absolute
+  top: 540px
+  width: 100%
+  overflow: auto
+  background: white
+  box-sizing: border-box
+  padding: 22px 18px 18px
+  z-index: 90
+  +transition2(padding 300ms, transform 300ms)
+  box-shadow: 0 3px 0 rgba(black, 0)
+
+  @media (max-width: $screen-sm-max)
+    top: 580px
+
+  .nav
+    width: 100%
+
+    li
+      display: inline-block
+      @extend .sans-serif
+      margin: 0 8px
+      padding: 8px 0
+      font-size: 0.9em
+      color: $md-grey
+      
+      a
+        position: relative
+        +transition(all 300ms)
+        
+        &:after
+          content: ""
+          width: 100%
+          height: 4px
+          background: #fbbf36
+          position: absolute
+          top: -7px
+          left: 50%
+          opacity: 0
+          z-index: -1
+          +transform(translate3d(-50%, 0, 0) scale(1))
+          +transition(all 300ms)
+        
+      &:hover,
+      &.active
+        a
+          color: $dk-grey
+          
+          &:after
+            opacity: 1
+            +transform(translate3d(-50%, 0, 0) scale(1))
+
+  &.sticky
+    position: fixed
+    top: 64px
+    padding: 14px 18px 10px
+    box-shadow: 0 3px 0 rgba(black, 0.05)
+
+    &.nav-down
+      +transform(translate3d(0, 0, 0))
+    
+    &.nav-up
+      +transform(translate3d(0, -64px, 0))
+
+#progress-bar
+  width: 100%
+  height: 3px
+  position: absolute
+  top: 0
+  left: 0

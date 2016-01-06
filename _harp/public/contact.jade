@@ -1,0 +1,64 @@
+extends layout
+
+block append vars
+  - bodyclass = 'view-contact'
+
+block content
+  section.masthead.masthead-product(style="background-image: url('/img/contact/masthead.jpg')")
+    .masthead-content
+      .block-bot-md: h1 Global reach. Local knowledge.
+      p
+        | With over Editorial 200 staff and offices in 12 major cities, WGSN... Lorem
+        | ipsum dolor sit amet, consectetur adipiscing elit. Morbi erat urna, iaculis
+        | vel ligula sit amet, aliquam dignissim nisi. elementum ullamcorper velit
+        | dictum sagittis.
+
+    //- .masthead-base
+    //-   p Regional Hubs
+    //-   .block-top-sm: img(src="img/arrow-down-white-wide.png", width="43")
+
+  #second-level-nav.hidden-md
+    #progress-bar
+    .nav.text-center
+      ul.tight#second-level-nav-menu
+        li: a(href="#north-america") North America
+        li /
+        li: a(href="#europe") Europe, Middle East &amp; Africa 
+        li /
+        li: a(href="#asia-pacific") Asia Pacific
+        li /
+        li: a(href="#latam") Latin America
+
+  .block-top-lg.hidden-md
+
+  section.bg-xlt-grey#north-america
+    .content-wrap
+      include partials/contact-north-america
+
+      .row
+        .col-xs-12.text-center
+          a.btn.btn-grey(href="") Contact Sales
+
+  section.bg-xxlt-grey#europe
+    .content-wrap
+      include partials/contact-europe
+
+      .row
+        .col-xs-12.text-center
+          a.btn.btn-grey(href="") Contact Sales
+
+  section.bg-xlt-grey#asia-pacific
+    .content-wrap
+      include partials/contact-asia-pacific
+
+      .row
+        .col-xs-12.text-center
+          a.btn.btn-grey(href="") Contact Sales
+
+  section.bg-xxlt-grey#latam
+    .content-wrap
+      include partials/contact-latam
+
+      .row
+        .col-xs-12.text-center
+          a.btn.btn-grey(href="") Contact Sales

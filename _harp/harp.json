@@ -1,0 +1,13 @@
+{
+  "globals": {
+    "title": "WGSN. Create Tomorrow.",
+    "description": "Lorem Ipsum",
+    "name": "Amelia Lewis",
+    "email": "amelia.lewis@wgsn.com",
+    "uri": "wgsn.com",
+
+    "typekit": false,
+    "analytics": false,
+    "disqus": false
+  }
+}

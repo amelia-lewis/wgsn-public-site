@@ -1,0 +1,26 @@
+extends layout
+
+block content
+  section
+    .content-wrap.text-center
+      h1 Subscriber log in
+      form.narrow-form
+        .block-top-md
+          label Email/username
+          input.input(type="text", placeholder="Email/username")
+          
+          label Password
+          input.input(type="password", placeholder="Password")
+
+        .row
+          .col-xs-6.text-left
+            label
+              input(type='checkbox', name='remember me', value='remember me')
+              | Remember me
+
+          .col-xs-6.text-right
+            a.underlined(href="/forgot-password") Forgot password?
+
+        .row.block-top-md
+          .col-sm-12  
+            a.btn.btn-yellow.pull-right(href="") Log in

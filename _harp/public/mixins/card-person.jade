@@ -1,0 +1,8 @@
+mixin card-person(img, name, title, desc)
+  .col-xs-12.col-sm-6.col-md-3
+    .card.card-person
+      img(src=img)
+      .text
+        h4= name
+        p.text-md-grey= title
+        p.tight= desc

@@ -1,0 +1,83 @@
+extends layout
+
+block content
+  section
+    .content-wrap.text-center
+      h1 Request a demo
+      form.narrow-form
+        p.text-center
+          | Want to see how WGSN can empower your business? Fill in the
+          | form below for a personalized tour of our sites. 
+        
+        .block-top-md
+          label First name
+          input.input(type="text", placeholder="First name")
+          
+          label Last name
+          input.input(type="text", placeholder="Last name")
+
+          label Email
+          input.input.error(type="text", placeholder="Email")
+          p.error-message Please provide your email.
+
+          label Phone
+          input.input(type="text", placeholder="Telephone")
+          
+          label Job title
+          input.input(type="text", placeholder="Job title")
+
+          label Job function
+          select.input
+            option Please select
+            option Job function lorem ipsum 1
+            option Job function lorem ipsum 2
+            option Job function lorem ipsum 3
+          
+          label Company name
+          input.input(type="text", placeholder="Company name")
+
+          label Business type
+          select.input
+            option Please select
+            option Business type lorem ipsum 1
+            option Business type lorem ipsum 2
+            option Business type lorem ipsum 3
+
+          label Country
+          select.input
+            option Please select
+            option Country lorem ipsum 1
+            option Country lorem ipsum 2
+            option Country lorem ipsum 3
+
+          p.text-center Which products are you interested in?
+         
+          label.product-checkbox
+            input(type="checkbox", name="fashion", value="fashion")
+            |  Fashion
+          
+          label.product-checkbox
+            input(type="checkbox", name="fashion", value="fashion")
+            |  Lifestyle &amp; Interiors
+          
+          label.product-checkbox
+            input(type="checkbox", name="fashion", value="fashion")
+            |  InStock
+          
+          label.product-checkbox
+            input(type="checkbox", name="fashion", value="fashion")
+            |  StyleTrial
+          
+          label.product-checkbox
+            input(type="checkbox", name="fashion", value="fashion")
+            |  Mindset
+
+        .block-ver-md
+          a.btn.btn-yellow(href="") Submit
+
+        .block-ver-md
+          p.text-smaller.text-italic
+            | WGSN services must only be used in the course of a business and/or
+            | professional environment and for business and/or professional reasons.
+            | WGSN services are not suitable for consumers and should not be used in
+            | such capacity.

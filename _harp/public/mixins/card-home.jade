@@ -1,0 +1,20 @@
+mixin card-home(img, videoimg, title, desc, li1, li2, li3, li4, link)
+  .card.card-alternating.card-home(id!=attributes.id)
+    .card-img.block-md.equal-height-shorter(style="background-image: url(" + img + ")")
+      if videoimg
+        .video-tile(style="background-image: url(" + videoimg + ")")
+    .card-content.block-md.equal-height-taller
+      .block-ver-sm
+        img.card-logo(src="/img/logos/wgsn-logo-grey.png", width="82")
+        h1= title
+        p= desc
+        ul.divided-list
+          li.tight.block-bot-sm= li1
+          li.tight.block-ver-sm= li2
+          li.tight.block-ver-sm= li3
+          if li4
+            li.tight.block-top-sm= li4
+        .block-top-md
+          if link
+            a.btn.btn-grey(href=link) Find out more
+          a.btn.btn-yellow(href="/demo") Get a demo

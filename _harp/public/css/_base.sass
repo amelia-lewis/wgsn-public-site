@@ -1,0 +1,95 @@
+body
+  background: black
+  margin: 0
+  padding: 0
+  color: $dk-grey
+  font-size: 14px
+
+  img
+    border: 0
+
+#content
+  z-index: 10
+  margin-top: 64px // for top nav
+
+.content-wrap
+  width: 1160px
+  margin: 0 auto
+  position: relative
+
+  @media (max-width: $screen-lg-min)
+    width: 90%
+
+  &.content-wrap-tight // for .card areas for full with on mobile
+    @media (max-width: $screen-xs-min)
+      width: 100%
+
+  &.content-narrow // for narrow column sections
+    width: 60%
+    max-width: 700px
+    margin: 0 auto
+
+    @media (max-width: $screen-lg-min)
+      width: 90%
+
+
+// ====================
+// Common Styles
+// ====================
+
+.display-box
+  display: flex
+  align-items: center
+  justify-content: center
+
+.center-content
+  position: absolute
+  top: 50%
+  left: 50%
+  +transform(translate3d(-50%, -50%, 0))
+
+
+@for $i from 1 through 30
+  .delay-#{$i * 50}
+    transition-delay: $i * 50ms !important
+    animation-delay: $i * 50ms !important
+
+
+.hidden-lg
+  display: block
+
+  @media (max-width: $screen-lg-min)
+    display: none
+
+.hidden-md
+  display: block
+
+  @media (max-width: $screen-md-min)
+    display: none
+
+.hidden-sm
+  display: block
+
+  @media (max-width: $screen-sm-min)
+    display: none
+
+.hidden-xs
+  display: block
+
+  @media (max-width: $screen-xs-min)
+    display: none
+
+
+.pull-right
+  float: right
+
+.pull-left
+  float: left
+
+
+.tight
+  margin: 0
+
+@media (max-width: $screen-xs-min)
+  .equal-height-shorter
+    height: auto !important

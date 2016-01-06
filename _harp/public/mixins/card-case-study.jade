@@ -1,0 +1,7 @@
+mixin card-case-study(img, desc, link)
+  .col-xs-12.col-sm-4
+    .card.card-case-study
+      .img(style="background-image: url(" + img + ")")
+      .text
+        p.text-left= desc
+        .block-top-md: a.btn.btn-grey(href=link) Download PDF

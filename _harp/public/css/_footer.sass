@@ -1,0 +1,97 @@
+footer
+  background: $xdk-grey
+  color: $md-grey
+
+  h1, h2, h3, h4, a:hover, a.underlined:hover
+    color: white
+    border-color: white
+
+  // li, p
+  //   font-size: 0.9em
+
+  h4
+    margin: 0 0 0.8em
+
+  li
+    margin: 0 0 0.8em
+
+  #footer-products
+    li
+      display: inline-block
+      @extend .sans-serif
+      margin: 10px
+      font-size: 0.9em
+
+  #footer-call
+    @media (max-width: 320px)
+      a
+        display: block
+  
+  #footer-social-media
+    overflow: auto
+
+    li
+      font-size: 1.4em
+      margin: 0 28px 0 0
+      display: inline-block
+
+      &:last-of-type
+        margin: 0
+  
+  .copyright
+    font-size: 0.8em
+  
+  @media (min-width: $screen-lg-min)
+    text-align: center
+
+    .col
+      display: inline-block
+      float: none
+      vertical-align: top
+      max-width: 360px
+      text-align: left
+
+
+// NEWSLETTER & FOLLOW
+#newsletter-signup
+  height: 100%
+  background: $dk-grey url("../img/misc/newsletter.jpg") no-repeat center / cover
+
+  input[type="text"]
+    margin: 0
+
+  label
+    @extend .serif
+    @extend .text-capitalize
+    float: left
+    width: calc(100% - 20px)
+
+  input[type="checkbox"]
+    float: left
+
+  @media (max-width: $screen-sm-min)
+    margin: 0 0 30px
+
+#follow-wgsn
+  height: 100%
+  position: relative
+  
+  a
+    &.social-media-icon
+      font-size: 1.4em
+      margin: 10px 20px
+      display: inline-block
+    
+    &:hover
+      color: $yellow
+
+  .blog-logo
+    width: 152px
+    height: 16px
+    display: block
+    background: url("../img/logos/wgsn-insider-grey.png") no-repeat center / cover
+    margin: 10px auto 0
+    +transition(all 300ms)
+
+    &:hover
+      background-image: url("../img/logos/wgsn-insider-yellow.png")

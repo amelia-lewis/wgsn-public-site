@@ -1,0 +1,88 @@
+.narrow-form
+  width: 500px
+  margin: 0 auto
+
+label
+  font-family: 'wgsn_headlineregular', Futura, Arial, Helvetica, sans-serif
+  text-transform: uppercase
+  letter-spacing: 0.05em
+  font-size: 0.9em
+  margin: 0 0 0.6em
+  display: block
+  text-align: left
+
+.input
+  background: white
+  -webkit-appearance: none
+  -moz-appearance: none
+  appearance: none
+  border: none
+  box-shadow: none
+  height: 50px
+  width: 100%
+  padding: 0 15px
+  margin: 0 0 30px
+  box-sizing: border-box
+  font-family: 'PT Serif', Georgia
+  font-size: 1em
+  border: 2px solid transparent
+  border-radius: 0px
+  +transition(all 300ms)
+
+.error
+  border-color: $red
+  margin: 0 0 10px
+
+.error-message
+  color: $red
+  @extend .text-left
+  margin: 0 0 30px
+
+select
+  border-radius: 0px !important
+  
+#language-select
+  direction: rtl
+
+  option
+    direction: ltr
+
+.input:focus
+  outline: none
+  border-color: #f8bd34
+
+input[type="checkbox"]
+  margin: 0 8px 0 0
+
+.product-checkbox
+  display: inline-block
+  text-align: center
+  padding: 18px 30px
+  position: relative
+  margin: 8px
+  
+  input[type="checkbox"]
+    -webkit-appearance: none
+    -moz-appearance: none
+    appearance: none
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    border: 4px solid #eaeae8
+    margin: 0
+    +transition(all 300ms)
+    
+    &:checked
+      border-color: #f8bd34
+    
+    &:focus
+      outline: none
+
+@media (max-width: 640px)
+  .narrow-form
+    width: 100%
+  
+  .product-checkbox
+    display: block

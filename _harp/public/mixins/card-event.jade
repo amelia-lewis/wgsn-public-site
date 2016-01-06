@@ -1,0 +1,11 @@
+mixin card-event(img, location, date, title, desc, link)
+  .card.card-non-alternating.card-event
+    .card-img.block-md.equal-height-shorter(style="background-image: url(" + img + ")")
+    .card-content.block-md.equal-height-taller
+      .block-ver-sm
+        h4= location
+        p= date
+        h3= title
+        p= desc
+        if link
+          .block-top-md: a.btn.btn-grey(href=link) Register now

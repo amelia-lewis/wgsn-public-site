@@ -1,0 +1,45 @@
+.arrow-carousel-prev,
+.arrow-carousel-next
+  position: absolute
+  top: 50%
+  width: 20px
+  height: 44px
+  background: no-repeat center / 100%
+  +transform(translate3d(0, -50%, 0))
+
+.arrow-carousel-prev
+  background-image: url("../img/arrow-carousel-prev.png")
+  left: -60px
+
+  @media (max-width: $screen-lg-min)
+    left: -30px    
+
+.arrow-carousel-next
+  background-image: url("../img/arrow-carousel-next.png")
+  right: -60px
+
+  @media (max-width: $screen-lg-min)
+    right: -30px    
+
+  .carousel-inner
+    width: 1140px
+    margin: 0 auto
+
+    @media (max-width: $screen-lg-min)
+      width: 90%
+    
+    @media (max-width: $screen-xs-min)
+      width: 100%
+
+.carousel-wrap
+  width: 100%
+  overflow-x: scroll
+  overflow-y: hidden
+  white-space: nowrap
+
+  .carousel-inner
+    width: 8 * (270px + 24px)
+    overflow: hidden
+
+  .card
+    white-space: normal

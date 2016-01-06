@@ -1,0 +1,64 @@
+extends layout
+
+block append vars
+  - bodyclass = 'view-events'
+
+block content
+  section.masthead.masthead-product(style="background-image: url('/img/events/masthead.jpg')")
+    .masthead-content
+      .block-bot-md: h1 The Vision 2030
+      p 25–26 May 2016
+
+    //- .masthead-base
+    //-   p Find a WGSN Event
+    //-   .block-top-sm: img(src="img/arrow-down-white-wide.png", width="43")
+
+  #second-level-nav.hidden-md
+    #progress-bar
+    .nav.text-center
+      ul.tight#second-level-nav-menu
+        li: a(href="#all-events") All events
+        li /
+        li: a(href="#north-america") North America
+        li /
+        li: a(href="#europe") Europe, Middle East &amp; Africa 
+        li /
+        li: a(href="#asia-pacific") Asia Pacific
+        li /
+        li: a(href="#latam") Latin America
+
+  section#who-uses-wgsn
+    .content-wrap.content-wrap-tight
+      .block-top-lg.hidden-md
+
+      +card-event(
+        "/",
+        "London", 
+        "21st September, 2015",
+        "Global retail trends & the vision, spring/summer 2017",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque mollis tristique mi ac blandit. Cras eu pharetra nisl. Praesent pulvinar ultrices sem, quis laoreet nibh varius ut. Donec euismod egestas tortor, porta sodales massa bibendum vel. Maecenas at sapien sapien. In vel fermentum nunc, eu faucibus risus. Maecenas ornare neque vitae bibendum consequat.",
+        "/")
+      
+      +card-event(
+        "/",
+        "London", 
+        "21st September, 2015",
+        "Global retail trends & the vision, spring/summer 2017",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque mollis tristique mi ac blandit. Cras eu pharetra nisl. Praesent pulvinar ultrices sem, quis laoreet nibh varius ut. Donec euismod egestas tortor, porta sodales massa bibendum vel. Maecenas at sapien sapien. In vel fermentum nunc, eu faucibus risus. Maecenas ornare neque vitae bibendum consequat.",
+        "/")
+
+      +card-event(
+        "/",
+        "London", 
+        "21st September, 2015",
+        "Global retail trends & the vision, spring/summer 2017",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque mollis tristique mi ac blandit. Cras eu pharetra nisl. Praesent pulvinar ultrices sem, quis laoreet nibh varius ut. Donec euismod egestas tortor, porta sodales massa bibendum vel. Maecenas at sapien sapien. In vel fermentum nunc, eu faucibus risus. Maecenas ornare neque vitae bibendum consequat.",
+        "/")
+
+      +card-event(
+        "/",
+        "London", 
+        "21st September, 2015",
+        "Global retail trends & the vision, spring/summer 2017",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque mollis tristique mi ac blandit. Cras eu pharetra nisl. Praesent pulvinar ultrices sem, quis laoreet nibh varius ut. Donec euismod egestas tortor, porta sodales massa bibendum vel. Maecenas at sapien sapien. In vel fermentum nunc, eu faucibus risus. Maecenas ornare neque vitae bibendum consequat.",
+        "/")

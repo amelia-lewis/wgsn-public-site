@@ -1,0 +1,143 @@
+extends layout
+
+block append vars
+  - bodyclass = 'view-wgsn-users'
+
+block content
+  section.masthead.masthead-product(style="background-image: url('/img/wgsn-users/masthead.jpg')")
+    .masthead-content
+      .block-bot-md: h1 From design to delivery
+      p
+        | WGSN has products and services for every link in the supply chain and
+        | for every team level. Our users are drawn from all departments across a
+        | business including, design, development, buying &amp; sourcing,
+        | merchandising, retail, marketing and strategy, and from every level
+        | in a business from junior staff right up to the c-suite. 
+      .block-top-lg: a.btn.btn-yellow.btn-video(href="") Get in touch
+
+    //- .masthead-base
+    //-   p Who uses WGSN
+    //-   .block-top-sm: img(src="img/arrow-down-white-wide.png", width="43")
+
+  #second-level-nav.hidden-md
+    #progress-bar
+    .nav.text-center
+      ul.tight#second-level-nav-menu
+        li: a(href="#who-uses-wgsn") Who uses WGSN
+        li /
+        li: a(href="#clients") Our clients
+        li /
+        li: a(href="#case-studies") Case studies
+
+  section#who-uses-wgsn
+    .content-wrap.content-wrap-tight
+      .block-top-lg.hidden-md
+
+      h1.text-center.block-bot-md.tight Essential tools for
+      //- ul.inline-list.text-center.block-bot-md.hidden-sm
+      //-   li: a.sans-serif.active(href="#designers") Designers
+      //-   li /
+      //-   li: a.sans-serif(href="#merchandisers") Merchandisers
+      //-   li /
+      //-   li: a.sans-serif(href="#buyers") Buyers
+      //-   li /
+      //-   li: a.sans-serif(href="#marketers") Marketers
+      //-   li /
+      //-   li: a.sans-serif(href="#strategists") Strategists
+
+      +card-user(
+        "/img/wgsn-users/designers.jpg",
+        "Designers", 
+        "WGSN gives designers the confidence they need to plan their ranges and create must-have products. Our suite of products and services for creatives encompasses fashion trend forecasting, crowd-sourced design validation, consumer and lifestyle trend insight and bespoke consultancy.",
+        "Keep ahead of future fashion trends with WGSN Fashion’s 2 year+ forecasts",
+        "Validate your designs with crowd-sourcing service WGSN Styletrial",
+        "Discover the next generation of influencers with Think Tank’s consumer tribe analyses")(id="designers")
+
+      +card-user(
+        "/img/wgsn-users/merchandisers.jpg",
+        "Merchandisers", 
+        "WGSN helps merchandisers maximise their margins, improve sell through and reduce risk in range planning. We offer specific products and services designed to fit into and enhance the merchandiser’s workflow including trend forecasting, real-time data analytics, and crowd-sourced range validation.",
+        "Validate ranges before they are made crowd-sourcing service WGSN Styletrial",
+        "Track best-sellers, re-stocks and mark-downs in real time with WGSN INstock ",
+        "Gain an indepth view of global retail trends with WGSN Fashion")(id="merchandisers")
+
+      +card-user(
+        "/img/wgsn-users/buyers.jpg",
+        "Buyers", 
+        "WGSN offers buyers insight they can trust to validate their decisions with early views into future trends in fashion, colour and textiles, plus real-time retail analytics and our crowd-sourced range validation service.",
+        "Validate your range before you launch it with crowd-sourcing via WGSN Styletrial",
+        "Get real-time data on sales, restocks and discounts with WGSN INstock",
+        "Gain an early view of fashion and consumer trends with WGSN Think Tank")(id="buyers")
+
+      +card-user(
+        "/img/wgsn-users/marketers.jpg",
+        "Marketers", 
+        "WGSN offers buyers insight they can trust to validate their decisions with early views into future trends in fashion, colour and textiles, plus real-time retail analytics and our crowd-sourced range validation service.",
+        "Validate your range before you launch it with crowd-sourcing via WGSN Styletrial",
+        "Get real-time data on sales, restocks and discounts with WGSN INstock",
+        "Gain an early view of fashion and consumer trends with WGSN Think Tank")(id="marketers")
+
+      +card-user(
+        "/img/wgsn-users/strategists.jpg",
+        "Strategists", 
+        "WGSN helps you create a winning strategy with our long-range forecasting, real-time data analytics and consumer insights expertise. In addition we have a team of global strategy consultants available to deliver bespoke reports and projects.",
+        "2-5 year view on emerging trends and innovations with WGSN Fashion",
+        "Real-time retail data analytics with WGSN Insight",
+        "Bespoke consultancy projects from WGSN Mindset")(id="strategists")
+
+  section.bg-xlt-grey.text-center#clients
+    .content-wrap.content-narrow
+      .block-bot-md
+        h1 Trusted by the industry's best
+        p
+          | WGSN is relied upon by some of the world’s most creative and innovative
+          | businesses in the fashion and lifestyle sectors from multi-national groups
+          | to independent designers. They trust us to help them make the right product
+          | and deliver it to the right place at the right time.
+
+    .content-wrap  
+      .row.text-center.block-bot-md
+        .col-xs-12
+          .client-logo(style="background-image: url('/img/wgsn-users/clients/fila.png');")
+          .client-logo(style="background-image: url('/img/wgsn-users/clients/casemate.png');")
+          .client-logo(style="background-image: url('/img/wgsn-users/clients/nickelodeon.png');")
+          .client-logo(style="background-image: url('/img/wgsn-users/clients/nordstrom.png');")
+          .client-logo(style="background-image: url('/img/wgsn-users/clients/xoxo.png');")
+          .client-logo(style="background-image: url('/img/wgsn-users/clients/zobha.png');")
+          .client-logo(style="background-image: url('/img/wgsn-users/clients/kellwood-company.png');")
+          .client-logo(style="background-image: url('/img/wgsn-users/clients/marks-and-spencer.png');")
+          .client-logo(style="background-image: url('/img/wgsn-users/clients/next.png');")
+          .client-logo(style="background-image: url('/img/wgsn-users/clients/phat-farm.png');")
+
+      .row
+        .col-xs-12
+          a.btn.btn-yellow(href="/demo") Get a demo
+
+  section.bg-xxlt-grey.text-center#case-studies
+    .content-wrap.content-narrow
+      .block-bot-md
+        h1 Case Studies
+        p
+          | WGSN helps the world’s leading brands achieve better Lorem ipsum dolor
+          | sit amet, consectetur adipiscing elit. Sed commodo dapibus lorem, vel
+          | vestibulum velit. Nulla urna tellus, finibus et purus sit amet, porttitor
+          | tempus nibh. Duis faucibus neque nec enim vulputate fermentum.
+
+    .content-wrap  
+      .row
+        +card-case-study(
+          "/img/wgsn-users/clients/casemate.png",
+          "Nicole Love, VP of Product Development at Case-Mate, started working with WGSN to gain trend knowledge and broaden Case-Mate’s appeal as a leading mobile accessory brand.",
+          "/")
+        +card-case-study(
+          "/img/wgsn-users/clients/fila.png",
+          "Francine Candiotti, Design Director, Fila, turned to WGSN to help her create fashion-forward collections and revive Fila’s standing as a leader in sports performance apparel.",
+          "/")
+        +card-case-study(
+          "/img/wgsn-users/clients/marks-and-spencer.png",
+          "Marks & Spencer is an iconic brand, woven into the fabric of the British high street. It needs to be able to anticipate the latest fashions and be able to adapt to trends quickly.",
+          "/")
+
+
+
+

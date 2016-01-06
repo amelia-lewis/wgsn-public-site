@@ -1,0 +1,127 @@
+extends layout
+
+block append vars
+  - bodyclass = 'view-product'
+
+block content
+  section.masthead.masthead-product(style="background-image: url('/img/wgsn-instock/masthead.jpg')")
+    .masthead-content
+      .block-bot-md: .masthead-product-logo(style="background-image: url('/img/logos/wgsn-instock.png')")
+      p
+        | The big data product for buyers, merchandisers and strategists to ensure
+        | your range is packed with winners at the right price at the right time.
+      .block-top-lg: a.btn.btn-yellow.btn-video(href="") Watch video
+
+    .masthead-base
+      ul.inline-list
+        li: a(href="/wgsn-fashion") Fashion
+        li /
+        li: a(href="/wgsn-lifestyle") Lifestyle &amp; Interiors
+        li /
+        li: a.active(href="/wgsn-instock") INstock
+        li /
+        li: a(href="/wgsn-styletrial") StyleTrial
+        li /
+        li: a(href="/wgsn-mindset") Mindset
+
+  #second-level-nav.hidden-md
+    #progress-bar
+    .nav.text-center
+      ul.tight#second-level-nav-menu
+        li: a(href="#subscriber-features") Subscriber Features
+        li /
+        li: a(href="#our-experts") Our Experts
+
+  .block-top-lg.hidden-md
+
+  section.bg-lt-grey.full-width-section
+    .content-wrap.content-narrow.text-center
+      .block-ver-lg
+        h1 Industry leading data to ensure your range is optimised for success
+        p WGSN INstock is designed to help reduce risk in your range planning. Knowing when to back a trend, colour, category or item and knowing when to back off can be a multi-million pound decision. You can’t afford to get it wrong, WGSN INstock gives you the confidence – and the intelligence – to get it right.
+
+  section.product-page-content.section-tight#subscriber-features
+    //- Comp Shopper
+    .product-row.video
+      .right.equal-height-shorter
+        .img(style="background-image: url('/img/wgsn-instock/comp-shopper.jpg')")
+
+      .left.bg-black.equal-height-taller.display-box
+        .block-lg
+          h2 Comp Shopper
+          .divider
+          p Our powerful comp shopper tool enables you to benchmark yourself against other companies in your market by colour, price, colour, pattern, brand and category to help ensure your range is optimised for success.
+          ul
+            li - More than 83m SKUs analysed
+            li - More than 12,000 brands and retailers across 400 different product categories monitored
+            li - Customise your view to focus on the markets that matter to you
+            li - Identify mark-downs and out-of-stocks quickly and easily
+
+    //- Colour Mix
+    .product-row.alternate
+      .left.equal-height-shorter
+        .img(style="background-image: url('/img/wgsn-instock/colour-mix.jpg')")
+        .heading.bg-white.display-box
+          .block-lg
+            h2 Colour mix
+
+      .right.bg-black.equal-height-taller.display-box
+        .block-lg
+          p Compare and contrast how your colour mix matches up to others in your market to help identify which shades are on to the up or on the way out.
+          ul.two-col-list
+            li - Change filters easily to get the right analysis for you
+            li - Make sure you are not under or over optioned on particular shades
+            li - Drill down to examine colour options across 400 product categories
+
+    //- Price architecture
+    .product-row
+      .left.equal-height-shorter
+        .img(style="background-image: url('/img/wgsn-instock/price-arc.jpg')")
+        .heading.bg-black.display-box
+          .block-lg
+            h2 Price architecture
+            //- .divider
+            //- p The latest in thinking from our global team of trend experts
+
+      .right.bg-white.equal-height-taller.display-box
+        .block-lg
+          p Whether you are a value player or a luxury brand, you can analyse your price architecture versus your contemporaries to ensure you have the right overall range and the right price on specific key items.
+          ul
+            li - Fine tune your overall pricing strategy or focus on specific categories
+            li - Feel confident you are offering the right price for your target customer
+            li - Validate your range across more than 12,000 brands and retailers
+
+    //- Product mix
+    .product-row.alternate
+      .left.equal-height-shorter
+        .img(style="background-image: url('/img/wgsn-instock/product-mix.jpg')")
+        .heading.bg-white.display-box
+          .block-lg
+            h2 Product mix
+            //- .divider
+            //- p The latest in thinking from our global team of trend experts
+
+      .right.bg-black.equal-height-taller.display-box
+        .block-lg
+          p Ensure your assortment is optimised for success across product categories and specific key items.
+          ul
+            li - Our comprehensive taxonomy allows instant and reliable insight
+            li - Benchmark you mix side by side with that of your competitors
+            li - Track new products across the market to ensure you are one step ahead
+
+  section.bg-xxlt-grey#our-experts
+    .content-wrap.content-wrap-tight
+      h1.text-center.block-bot-md Meet the experts
+      .row
+        +card-person("/img", "Name Surname", "Head of Department XYZ", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo dapibus lorem, vel vestibulum velit. Nulla urna tellus, finibus et purus sit amet, porttitor tempus nibh. Duis faucibus neque nec enim vulputate fermentum.")
+        +card-person("/img", "Name Surname", "Head of Department XYZ", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo dapibus lorem, vel vestibulum velit. Nulla urna tellus, finibus et purus sit amet, porttitor tempus nibh. Duis faucibus neque nec enim vulputate fermentum.")
+        +card-person("/img", "Name Surname", "Head of Department XYZ", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo dapibus lorem, vel vestibulum velit. Nulla urna tellus, finibus et purus sit amet, porttitor tempus nibh. Duis faucibus neque nec enim vulputate fermentum.")
+        +card-person("/img", "Name Surname", "Head of Department XYZ", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo dapibus lorem, vel vestibulum velit. Nulla urna tellus, finibus et purus sit amet, porttitor tempus nibh. Duis faucibus neque nec enim vulputate fermentum.")
+        +card-person("/img", "Name Surname", "Head of Department XYZ", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo dapibus lorem, vel vestibulum velit. Nulla urna tellus, finibus et purus sit amet, porttitor tempus nibh. Duis faucibus neque nec enim vulputate fermentum.")
+        +card-person("/img", "Name Surname", "Head of Department XYZ", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo dapibus lorem, vel vestibulum velit. Nulla urna tellus, finibus et purus sit amet, porttitor tempus nibh. Duis faucibus neque nec enim vulputate fermentum.")
+        +card-person("/img", "Name Surname", "Head of Department XYZ", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo dapibus lorem, vel vestibulum velit. Nulla urna tellus, finibus et purus sit amet, porttitor tempus nibh. Duis faucibus neque nec enim vulputate fermentum.")
+        +card-person("/img", "Name Surname", "Head of Department XYZ", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo dapibus lorem, vel vestibulum velit. Nulla urna tellus, finibus et purus sit amet, porttitor tempus nibh. Duis faucibus neque nec enim vulputate fermentum.")
+
+      .row
+        a.expand-section(href="") Meet more of the team
+          img(src="img/arrow-grey-down.png", width="40")

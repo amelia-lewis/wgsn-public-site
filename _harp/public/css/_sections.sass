@@ -1,0 +1,68 @@
+section
+  background: $xxlt-grey
+  position: relative
+  padding: 50px 0
+
+  @media (max-width: $screen-sm-min)
+    padding: 40px 0
+
+  @media (max-width: $screen-xs-min)
+    padding: 30px 0
+
+.section-tight
+  padding: 0
+
+.bg-white
+  background-color: white
+
+.bg-xlt-grey
+  background-color: $xlt-grey
+
+.bg-lt-grey
+  background-color: $lt-grey
+
+.bg-md-grey
+  background-color: $md-grey
+
+.bg-dk-grey
+  background-color: $dk-grey
+  color: white
+
+.bg-xdk-grey
+  background-color: $xdk-grey
+  color: white
+
+.bg-black
+  background-color: black
+  color: white
+
+.bg-white-border
+  border: 6px solid white
+  box-sizing: border-box
+
+.bg-img
+  background: $dk-grey no-repeat center / cover
+  color: white
+
+  &:after
+    content: ""
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    background: rgba(black, 0.5)
+
+  > *
+    z-index: 20
+    position: relative
+
+.full-width-section
+  h1
+    font-size: 2.4em
+
+  p
+    font-size: 1.2em
+
+hr
+  border-top: 1px solid #d2d2d2

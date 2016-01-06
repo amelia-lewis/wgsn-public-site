@@ -1,0 +1,13 @@
+mixin card-media(img, date, title, media, desc, link)
+  .card.card-media.card-carousel
+    .img(style="background-image: url(" + img + ")")
+    .text
+      p= date
+      if media
+        p.text-md-grey Featured in 
+          span= media
+      h4= title
+      p= desc
+      .block-top-sm
+        a.read-more(href=link) View full article 
+          span &#8594;

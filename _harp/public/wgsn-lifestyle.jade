@@ -1,0 +1,143 @@
+extends layout
+
+block append vars
+  - bodyclass = 'view-product'
+
+block content
+  section.masthead.masthead-product(style="background-image: url('/img/wgsn-lifestyle/masthead.jpg')")
+    .masthead-content
+      .block-bot-md: .masthead-product-logo(style="background-image: url('/img/logos/wgsn-lifestyle.png')")
+      p The pioneering trend service for the consumer lifestyle and interiors industry helping inform great product design and business strategies.
+      .block-top-lg: a.btn.btn-yellow.btn-video(href="") Watch video
+
+    .masthead-base
+      ul.inline-list
+        li: a(href="/wgsn-fashion") Fashion
+        li /
+        li: a.active(href="/wgsn-lifestyle") Lifestyle &amp; Interiors
+        li /
+        li: a(href="/wgsn-instock") INstock
+        li /
+        li: a(href="/wgsn-styletrial") StyleTrial
+        li /
+        li: a(href="/wgsn-mindset") Mindset
+
+  #second-level-nav.hidden-md
+    #progress-bar
+    .nav.text-center
+      ul.tight#second-level-nav-menu
+        li: a(href="#subscriber-features") Subscriber Features
+        li /
+        li: a(href="#our-experts") Our Experts
+
+  .block-top-lg.hidden-md
+
+  section.bg-lt-grey.full-width-section
+    .content-wrap.content-narrow.text-center
+      .block-ver-lg
+        h1 Market analysis, consumer insight and design inspiration
+        p ...
+
+  section.product-page-content.section-tight#subscriber-features
+    //- Design & Inspiration
+    .product-row
+      .left.equal-height-shorter
+        .img(style="background-image: url('/img/wgsn-lifestyle/img-1.jpg')")
+        .heading.bg-black.display-box
+          .block-lg
+            h2 Design &amp; Inspiration
+
+      .right.bg-white.equal-height-taller.display-box
+        .block-lg
+          p Our expert editors scour the globe to bring you unparalleled insight, updates and forecasts to help you develop a confident approach to colour, buying and design. This section covers the long- and the near-term view of the trends that matter.
+          ul
+            li - 200+ trade shows covered in-depth every year
+            li - Bi-annual colour reports with specific edits for Lifestyle &amp; Interiors and key regions
+            li - Five-year plus forecasts on consumer behaviour
+
+    //- Retail intelligence
+    .product-row.alternate
+      .left.equal-height-shorter
+        .img(style="background-image: url('/img/wgsn-lifestyle/img-3.jpg')")
+        .heading.bg-white.display-box
+          .block-lg
+            h2 Retail intelligence
+
+      .right.bg-black.equal-height-taller.display-box
+        .block-lg
+          p Up-to-the-minute news, executive briefings, global retail and VM trends and trend confirmations are all covered here to help hone your strategies for retail, customer communications and business. Our trend confirmations will also help give you confidence in your decision-making.
+          ul
+            li - Uncover up-and-coming trends comp shopping, gift giving guides and “Wow me” features
+            li - In-depth reports on marketing strategies and experience design
+            li - An annual calendar to help you plan for the most important industry events
+
+    //- 23 product categories
+    .product-row
+      .left.equal-height-shorter
+        .img(style="background-image: url('/img/wgsn-lifestyle/img-2.jpg')")
+        .heading.bg-black.display-box
+          .block-lg
+            h2 23 product categories
+
+      .right.bg-white.equal-height-taller.display-box
+        .block-lg
+          p We cover 23 different product categories offering in-depth insight, trends and product development tools for every home décor category plus all the key categories in the wider lifestyle market. Whether you are a specialist in a particular product category or want a broad overview of how consumers live and behave, we’ve got it covered.
+          ul.two-col-list
+            li - Interiors
+            li - Bed &amp; Bath
+            li - Colour
+            li - Decorative Accessories
+            li - Furniture &amp; Lighting
+            li - Garden &amp; Outdoor
+            li - Interior Style
+            li - Kids’ Room
+            li - Kitchen &amp; Tabletop
+            li - Print &amp; Pattern
+            li - Seasonal Gifting
+            li - Textiles
+            li - Walls &amp; Floors
+            li - Vintage &amp; Craft
+            li - Lifestyle
+            li - Automotive
+            li - Consumer Electronics
+            li - Experience Design
+            li - Fashion Connection
+            li - Food &amp; Drink
+            li - Hospitality
+            li - Materials &amp; Surfaces
+            li - Paper &amp; Packaging
+            li - Pets
+            li - Wellness
+
+    //- Design Tools & Resources
+    .product-row.alternate
+      .left.equal-height-shorter
+        .img(style="background-image: url('/img/wgsn-lifestyle/img-5.jpg')")
+        .heading.bg-white.display-box
+          .block-lg
+            h2 Design Tools &amp; Resources
+
+      .right.bg-black.equal-height-taller.display-box
+        .block-lg
+          p Not only do we offer insight and inspiration on every major product category across the lifestyle and interiors sectors but we give you the tools to put all your research into action. With WGSN Lifestyle and Interiors, you can view, organise and share your images, plan research trips and kick-start your design process with our easy to use and intuitive functions.
+          ul
+            li - Colour Play - create your own palettes using full Pantone, CSI, CNCS colour libraries
+            li - Clip images from anywhere on the web and add to your own library
+            li - Plan your research trips with our expert City by City guides
+
+  section.bg-xxlt-grey#our-experts
+    .content-wrap.content-wrap-tight
+      h1.text-center.block-bot-md Meet the experts
+      .row
+        +card-person("/img", "Name Surname", "Head of Department XYZ", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo dapibus lorem, vel vestibulum velit. Nulla urna tellus, finibus et purus sit amet, porttitor tempus nibh. Duis faucibus neque nec enim vulputate fermentum.")
+        +card-person("/img", "Name Surname", "Head of Department XYZ", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo dapibus lorem, vel vestibulum velit. Nulla urna tellus, finibus et purus sit amet, porttitor tempus nibh. Duis faucibus neque nec enim vulputate fermentum.")
+        +card-person("/img", "Name Surname", "Head of Department XYZ", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo dapibus lorem, vel vestibulum velit. Nulla urna tellus, finibus et purus sit amet, porttitor tempus nibh. Duis faucibus neque nec enim vulputate fermentum.")
+        +card-person("/img", "Name Surname", "Head of Department XYZ", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo dapibus lorem, vel vestibulum velit. Nulla urna tellus, finibus et purus sit amet, porttitor tempus nibh. Duis faucibus neque nec enim vulputate fermentum.")
+        +card-person("/img", "Name Surname", "Head of Department XYZ", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo dapibus lorem, vel vestibulum velit. Nulla urna tellus, finibus et purus sit amet, porttitor tempus nibh. Duis faucibus neque nec enim vulputate fermentum.")
+        +card-person("/img", "Name Surname", "Head of Department XYZ", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo dapibus lorem, vel vestibulum velit. Nulla urna tellus, finibus et purus sit amet, porttitor tempus nibh. Duis faucibus neque nec enim vulputate fermentum.")
+        +card-person("/img", "Name Surname", "Head of Department XYZ", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo dapibus lorem, vel vestibulum velit. Nulla urna tellus, finibus et purus sit amet, porttitor tempus nibh. Duis faucibus neque nec enim vulputate fermentum.")
+        +card-person("/img", "Name Surname", "Head of Department XYZ", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo dapibus lorem, vel vestibulum velit. Nulla urna tellus, finibus et purus sit amet, porttitor tempus nibh. Duis faucibus neque nec enim vulputate fermentum.")
+
+      .row
+        a.expand-section(href="") Meet more of the team
+          img(src="img/arrow-grey-down.png", width="40")

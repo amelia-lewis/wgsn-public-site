@@ -1,0 +1,109 @@
+.masthead-product
+  .masthead-product-logo
+    width: 100%
+    height: 48px
+    background: no-repeat center / contain
+    margin: 0 auto
+
+    @media (max-width: $screen-sm-max)
+      height: 32px
+      max-width: 90%
+
+  ul li a
+    color: rgba(white, 0.5)
+
+    &:hover,
+    &.active
+      color: white
+
+.product-page-content
+  .product-row
+    overflow: auto
+    position: relative
+    max-width: 1160px
+    margin: 0 auto
+
+    // @media (max-width: $screen-sm-max)
+    //   margin: 0 auto 30px
+
+    .equal-height-taller
+      min-height: 520px
+
+      @media (max-width: $screen-md-min)
+        min-height: 260px
+
+    .left
+      float: left
+
+    .right
+      float: right
+
+    .left,
+    .right
+      width: 50%
+      height: 100%
+      box-sizing: border-box
+      position: relative
+
+      @media (max-width: $screen-md-min)
+        float: none !important
+        width: 100%
+        height: auto
+        display: block
+
+    .img,
+    .heading
+      width: 50%
+      height: 100%
+      box-sizing: border-box
+      float: left
+      position: relative
+
+      @media (max-width: $screen-sm-min)
+        float: none !important
+        width: 100%
+        height: auto
+        display: block
+
+    .img
+      background: $md-grey no-repeat center / cover
+
+      @media (max-width: $screen-sm-min)
+        height: 280px
+
+    .heading
+      h2
+        line-height: 1.1em
+
+      .divider
+        width: 100%
+        height: 3px
+        margin: 14px 0
+
+      &.bg-black
+        .divider
+          background: white
+
+      &.bg-white,
+      &.bg-xlt-grey
+        .divider
+          background: $dk-grey
+
+      @media (max-width: $screen-sm-min)
+        text-align: center
+
+    &.alternate
+      .left
+        .img
+          float: right
+
+    &.video
+      .heading,
+      .img
+        width: 100%
+
+  @media (max-width: $screen-sm-min)
+    .equal-height-shorter,
+    .equal-height-taller
+      height: auto !important
+      min-height: 0 !important

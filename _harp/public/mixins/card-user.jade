@@ -1,0 +1,13 @@
+mixin card-user(img, title, desc, li1, li2, li3)
+  .card.card-alternating.card-user(id!=attributes.id)
+    .card-img.block-md.equal-height-shorter(style="background-image: url(" + img + ")")
+    .card-content.block-md.equal-height-taller
+      .block-ver-sm
+        h1= title
+        p= desc
+        ul.divided-list
+          li.tight.block-bot-sm= li1
+          li.tight.block-ver-sm= li2
+          li.tight.block-ver-sm= li3
+        .block-top-md
+          a.btn.btn-yellow(href="/demo") Get a demo

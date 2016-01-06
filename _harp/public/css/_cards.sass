@@ -1,0 +1,140 @@
+.card
+  width: 100%
+  background: white
+  overflow: auto
+  box-sizing: border-box
+
+  @media (max-width: $screen-xs-min)
+    margin: 0
+
+  .card-img,
+  .card-content
+    width: 50%
+    box-sizing: border-box
+    position: relative
+
+    .video-tile
+      position: absolute
+      bottom: 0
+      background: $md-grey no-repeat center / cover
+      width: 160px
+      height: 90px
+      border: solid white
+
+    h3
+      color: $md-grey
+
+    .btn
+      margin: 0 10px 0 0
+
+      @media (max-width: $screen-sm-min)
+        &:first-of-type
+          margin: 0 0 10px
+
+.card-alternating,
+.card-non-alternating
+  .card-img
+    background: $dk-grey no-repeat center / cover
+    @extend .pull-left
+
+    .video-tile
+      right: 0
+      border-width: 1px 0 0 1px
+  
+  .card-content
+    @extend .pull-right
+
+  @media (max-width: $screen-sm-min)
+    .card-img,
+    .card-content
+      float: none
+      width: 100%
+    
+    .card-img
+      height: 280px !important
+
+.card-alternating:nth-of-type(odd)
+  .card-img
+    @extend .pull-right
+
+    .video-tile
+      left: 0
+      border-width: 1px 1px 0 0
+  
+  .card-content
+    @extend .pull-left
+
+.card-home,
+.card-event,
+.card-user
+  margin: 0 0 30px
+
+  @media (max-width: $screen-sm-min)
+    margin: 0
+
+  &:last-of-type
+    margin: 0
+
+.card-home
+  .card-logo
+    margin: 0 0 6px
+
+  p
+    font-size: 1.1em
+    @extend .block-bot-md
+    @extend .tight
+
+.card-person
+  background: none
+  
+  img
+    width: 100%
+    height: 340px
+    background: $md-grey
+
+  .text
+    padding: 14px 8px
+
+  @media (max-width: $screen-lg-min)
+    img  
+      height: 260px
+
+  @media (max-width: $screen-sm-min)
+    padding: 20px
+
+    img
+      width: 100px
+      height: 140px
+      float: left
+
+    .text
+      float: right
+      padding: 0 0 0
+      width: calc(100% - 120px)
+
+.card-carousel
+  width: 270px
+  display: inline-block
+  margin: 0 12px
+  vertical-align: top
+
+  @media (max-width: $screen-sm-min)
+    width: 340px
+    padding-top: 0
+    padding-bottom: 0
+
+.card-case-study,
+.card-media
+  background: none
+  
+  .img
+    width: 100%
+    height: 200px
+    background: white no-repeat center / contain
+
+  .text
+    padding: 14px 8px
+
+  @media (max-width: $screen-sm-min)
+    .text
+      padding: 20px
