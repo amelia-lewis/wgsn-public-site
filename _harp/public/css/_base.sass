@@ -10,26 +10,22 @@ body
 
 #content
   z-index: 10
-  margin-top: 64px // for top nav
+  // margin-top: 64px // for top nav
 
 .content-wrap
-  width: 1160px
+  width: 1500px
   margin: 0 auto
   position: relative
 
-  @media (max-width: $screen-lg-min)
+  @media (max-width: $screen-xl-min)
     width: 90%
-
-  &.content-wrap-tight // for .card areas for full with on mobile
-    @media (max-width: $screen-xs-min)
-      width: 100%
 
   &.content-narrow // for narrow column sections
     width: 60%
     max-width: 700px
     margin: 0 auto
 
-    @media (max-width: $screen-lg-min)
+    @media (max-width: $screen-xl-min)
       width: 90%
 
 

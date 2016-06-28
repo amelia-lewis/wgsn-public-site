@@ -1,12 +1,12 @@
 .btn
   display: inline-block
   position: relative
-  padding: 18px 24px
+  padding: 18px 34px
   font-size: 0.8em
   line-height: 1em
+  letter-spacing: 0.15em
   @extend .sans-serif
   @extend .text-center
-  +border-radius(3px)
   +transition(all 300ms)
   +transform(translate3d(0, 0, 0) scale(1))
   z-index: 1
@@ -40,25 +40,19 @@
   //   &:hover
   //     +transform(translate3d(0, 0, 0) scale(1))
 
-  @media (max-width: $screen-xs-min)
-    display: block
-    width: 100%
-    margin: 0 0 10px
-    padding: 18px 0
-
-.card .btn
-  @media (max-width: $screen-sm-min)
-    display: block
-    width: 100%
-    margin: 0 0 10px
-    padding: 18px 0
+.btn-block
+  display: block
+  width: 100%
+  margin: 0 0 10px
+  padding: 18px 0
 
 .btn-grey
-  background: $dk-grey
-  color: white
+  border: 1px solid $dk-grey
+  color: $dk-grey
   
   &:hover
-    background: lighten($dk-grey, 8%)
+    background: $dk-grey
+    color: white
 
 .btn-yellow
   background: $yellow

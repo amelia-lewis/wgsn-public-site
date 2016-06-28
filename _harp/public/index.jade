@@ -4,88 +4,71 @@ block append vars
   - bodyclass = 'view-index'
 
 block content
-  section.masthead(style="background-image: url('/img/home/masthead.jpg')")
+  section.masthead.wow.fadeIn(style="background-image: url('http://www.wgsn.com/wp-content/uploads/disney-1024x682.jpg')")
     .masthead-content
-      .block-bot-md: img.masthead-logo(src="/img/logos/wgsn-create-tomorrow.png", width="200")
-      p
-        | Our experts provide deep insight and analysis of consumer, fashion
-        | and design trends through our WGSN.com platform and consulting
-        | business. We inspire our clients to plan and trade their product
-        | range with confidence.
-
-    //- .masthead-base
-    //-   p View our services
-    //-   .block-top-sm: img(src="img/arrow-down-white-wide.png", width="43")
-
-  #second-level-nav.hidden-md
-    #progress-bar
-    .nav.text-center
-      ul.tight#second-level-nav-menu
-        li: a(href="#fashion") Fashion
-        li /
-        li: a(href="#lifestyle") Lifestyle &amp; Interiors
-        li /
-        li: a(href="#instock") Retail analytics
-        li /
-        li: a(href="#styletrial") Design reviews
-        li /
-        li: a(href="#mindset") Consulting
+      img.masthead-logo(src="/img/logos/wgsn-create-tomorrow.png", width="500")
+      //- p The global trend authority for fashion and the creative industries.
 
   section
-    .content-wrap.content-wrap-tight
-      .block-top-lg.hidden-md
-
-      +card-home(
-        "/img/home/fashion.jpg",
-        "/img/misc/video.png",
-        "Fashion", 
-        "The World's leading fashion and consumer trend forecasting service.",
-        "Available 24/7 at WGSN.com",
-        "17 product categories, updated daily",
-        "Over $20m content investment every year",
-        "Trusted by thousands of professionals in the style and design sectors from small to Fortune 500 companies.",
-        "/wgsn-fashion")(id="fashion")
-      
-      +card-home(
-        "/img/home/lifestyle.jpg",
-        "/img/misc/video.png",
-        "Lifestyle & Interiors", 
-        "The only trend service exclusively for the lifestyle & interiors sectors.",
-        "Available 24/7 at WGSN.com",
-        "13 product categories, updated daily",
-        "Strategic insight with Think Tank",
-        "Trusted by thousands of professionals in the style and design sectors from small to Fortune 500 companies.",
-        "/wgsn-lifestyle")(id="lifestyle")
-      
-      +card-home(
-        "/img/home/instock.jpg",
-        "/img/misc/video.png",
-        "InStock", 
-        "The big data retail analytics platform for fashion buyers and merchandisers.",
-        "Over 12,000 e-commerce brands and retailers",
-        "40 million SKUs updated daily, online",
-        "5 e-commerce categories covered",
-        "Trusted by thousands of professionals in the style and design sectors from small to Fortune 500 companies.",
-        "/wgsn-instock")(id="instock")
-      
-      +card-home(
-        "/img/home/styletrial.jpg",
-        "/img/misc/video.png",
-        "StyleTrial", 
-        "Crowdsourced validation of range plans",
-        "Test designs, CADs and images online",
-        "Identify potential best sellers",
-        "Over 750,000 panellists",
-        "Trusted by thousands of professionals in the style and design sectors from small to Fortune 500 companies.",
-        "/wgsn-styletrial")(id="styletrial")
-      
-      +card-home(
-        "/img/home/mindset.jpg",
-        "/img/misc/video.png",
-        "Mindset", 
-        "The bespoke consulting service from WGSN",
-        "Global consulting team",
-        "Market, consumer & product specialists",
-        "Track record of delivery",
-        "Trusted by thousands of professionals in the style and design sectors from smal to Fortune 500 companies.",
-        "/wgsn-mindset")(id="mindset")
+    .content-wrap
+      .row
+        .col-xs-12.col-sm-6.block-bot-md
+          +card-home(
+            "/img/home/fashion.jpg",
+            "/img/misc/video.png",
+            "Fashion", 
+            "The World's leading fashion and consumer trend forecasting service.",
+            "Available 24/7 at WGSN.com",
+            "17 product categories, updated daily",
+            "Over $20m content investment every year",
+            "Trusted by thousands of professionals in the style and design sectors from small to Fortune 500 companies.",
+            "/wgsn-fashion")(id="fashion")
+          
+        .col-xs-12.col-sm-6.block-bot-md
+          +card-home(
+            "/img/home/lifestyle.jpg",
+            "/img/misc/video.png",
+            "Lifestyle & Interiors", 
+            "The only trend service exclusively for the lifestyle & interiors sectors.",
+            "Available 24/7 at WGSN.com",
+            "13 product categories, updated daily",
+            "Strategic insight with Think Tank",
+            "Trusted by thousands of professionals in the style and design sectors from small to Fortune 500 companies.",
+            "/wgsn-lifestyle")(id="lifestyle")
+          
+      .row
+        .col-xs-12.col-sm-6.col-md-4.block-bot-md
+          +card-home(
+            "/img/home/instock.jpg",
+            "/img/misc/video.png",
+            "InStock", 
+            "The big data retail analytics platform for fashion buyers and merchandisers.",
+            "Over 12,000 e-commerce brands and retailers",
+            "40 million SKUs updated daily, online",
+            "5 e-commerce categories covered",
+            "Trusted by thousands of professionals in the style and design sectors from small to Fortune 500 companies.",
+            "/wgsn-instock")(id="instock")
+          
+        .col-xs-12.col-sm-6.col-md-4.block-bot-md
+          +card-home(
+            "/img/home/styletrial.jpg",
+            "/img/misc/video.png",
+            "StyleTrial", 
+            "Crowdsourced validation of range plans",
+            "Test designs, CADs and images online",
+            "Identify potential best sellers",
+            "Over 750,000 panellists",
+            "Trusted by thousands of professionals in the style and design sectors from small to Fortune 500 companies.",
+            "/wgsn-styletrial")(id="styletrial")
+          
+        .col-xs-12.col-sm-6.col-md-4.block-bot-md
+          +card-home(
+            "/img/home/mindset.jpg",
+            "/img/misc/video.png",
+            "Mindset", 
+            "The bespoke consulting service from WGSN",
+            "Global consulting team",
+            "Market, consumer & product specialists",
+            "Track record of delivery",
+            "Trusted by thousands of professionals in the style and design sectors from smal to Fortune 500 companies.",
+            "/wgsn-mindset")(id="mindset")
